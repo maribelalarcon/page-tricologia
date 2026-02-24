@@ -6,14 +6,16 @@ import Features from "../components/home/features.astro";
 import Mission from "../components/home/mission.astro";
 import Testimonials from "../components/home/testimonials.astro";
 import Faq from "../components/home/FAQ.astro";
-import HomeBanner from "../components/home/homeBanner.astro"
+import HomeBanner from "../components/home/homeBanner.astro";
+import Homephrase from "../components/home/homephrase.astro";
 ---
 
 <Layout>
   <Header />
-  <Features />
+  <Homephrase />
   <Mission />
-  <Testimonials />
   <HomeBanner />
+  <Features />
+  <Testimonials />
   <Faq />
 </Layout>
