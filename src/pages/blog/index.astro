@@ -25,16 +25,27 @@ const currentPosts = blogPosts.slice(start, end);
       ]}
     />
 
-    <h1 class="text-center text-[#0B2545] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12">
-      Legal Blog
+    <h1
+      class="text-center text-[#0B2545] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12"
+    >
+      Nuestros Tratamientos
     </h1>
 
+    <p class="text-center text-gray-500 mb-16">
+      Cada tratamiento se indica según el diagnóstico, el tipo de alopecia y las
+      necesidades individuales de cada paciente. El objetivo es frenar la caída,
+      estimular el crecimiento y mejorar la salud del cuero cabelludo y del
+      cabello.
+    </p>
+
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-      {currentPosts.map((post) => (
-        <BlogCard post={post} />
-      ))}
+      {currentPosts.map((post) => <BlogCard post={post} />)}
     </div>
 
-    <Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/blog" />
+    <Pagination
+      currentPage={currentPage}
+      totalPages={totalPages}
+      baseUrl="/blog"
+    />
   </section>
 </Base>

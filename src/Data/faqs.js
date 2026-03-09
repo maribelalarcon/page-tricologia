@@ -1,23 +1,24 @@
 // data/faqs.js
 export const faqs = [
   {
-    question: 'What legal services do you offer?',
+    question: "¿Cuándo se recomienda realizar una consulta especializada?",
     answer:
-      'We provide advice and representation in civil, criminal, labor, and commercial law, adapting to the needs of each client.',
+      "Ante un aumento significativo de la caída, disminución de la densidad capilar, ensanchamiento de la raya o cambios evidentes en la calidad del cabello.",
   },
   {
-    question: 'How can I request a consultation?',
+    question: "¿Cómo se diagnostica el tipo de alopecia?",
     answer:
-      'You can contact us through the form in the contact section or by phone. We will respond promptly to schedule an appointment.',
+      "El diagnóstico se realiza mediante una evaluación clínica especializada, examen del cuero cabelludo y, cuando está indicado, estudios complementarios como tricoscopía o análisis de laboratorio.",
   },
   {
-    question: 'Do you handle cases nationwide?',
+    question:
+      "¿Por qué es fundamental identificar la causa de la caída capilar?",
     answer:
-      'Yes, we have a presence in various provinces and also provide virtual consultations for clients across the country.',
+      "Porque el abordaje terapéutico depende directamente del origen del problema. Un diagnóstico preciso permite optimizar resultados y prevenir la progresión del cuadro",
   },
   {
-    question: 'What is the cost of an initial consultation?',
+    question: "¿El tratamiento es igual para todos los pacientes?",
     answer:
-      'The first consultation is free of obligation. Afterwards, we provide a clear quote tailored to your specific case.',
+      "No. Cada plan terapéutico se diseña de manera individualizada según el tipo de alopecia, el grado de avance y las características clínicas de cada paciente.",
   },
 ];
