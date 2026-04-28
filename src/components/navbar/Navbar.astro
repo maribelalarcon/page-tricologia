@@ -1,42 +1,42 @@
-<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto pl-1 pr-3 py-3 flex items-center justify-between">
+<nav class="fixed top-0 left-0 z-50 w-full border-b border-slate-200/70 bg-white/92 shadow-sm backdrop-blur-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between pl-2 pr-4 py-2 md:py-2.5">
     <!-- Logo -->
     <a href="/" class="flex items-center">
       <img
         src="/logo-nombre.png"
         alt="Logo"
-        class="h-24 md:h-28 w-auto scale-110 origin-left"
+        class="h-16 w-auto origin-left md:h-20"
       />
     </a>
 
     <!-- Links md+ -->
-    <ul class="hidden md:flex space-x-8">
+    <ul class="hidden items-center gap-7 md:flex">
       <li>
         <a
           href="/blog"
-          class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1D3A75]"
+          class="group relative text-[0.95rem] font-semibold tracking-[0.01em] text-slate-700 transition-colors duration-300 hover:text-[#1D3A75]"
         >
           Tratamientos
           <span
-            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
+            class="absolute -bottom-1.5 left-0 h-0.5 w-0 rounded-full bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
           ></span>
         </a>
       </li>
       <li>
         <a
           href="/#faqs"
-          class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1D3A75]"
+          class="group relative text-[0.95rem] font-semibold tracking-[0.01em] text-slate-700 transition-colors duration-300 hover:text-[#1D3A75]"
         >
           Preguntas Frecuentes
           <span
-            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
+            class="absolute -bottom-1.5 left-0 h-0.5 w-0 rounded-full bg-[#1D3A75] transition-all duration-300 group-hover:w-full"
           ></span>
         </a>
       </li>
       <li>
         <a
           href="/contact"
-          class="px-4 py-2 text-white font-semibold rounded-3xl bg-[#0097B2] hover:bg-[#0D3857] transition"
+          class="rounded-full bg-[#0097B2] px-4 py-2 text-sm font-semibold text-white transition duration-300 hover:bg-[#0D3857]"
         >
           Contactar
         </a>
@@ -48,10 +48,13 @@
       <input id="menu-toggle" type="checkbox" class="peer hidden" />
 
       <!-- Botón hamburguesa / cierre -->
-      <label for="menu-toggle" class="cursor-pointer z-50 flex items-center">
+      <label
+        for="menu-toggle"
+        class="z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-slate-700 transition duration-300 hover:bg-slate-100/70"
+      >
         <!-- menu móvil  -->
         <svg
-          class="h-6 w-6 text-gray-700 peer-checked:hidden"
+          class="h-7 w-7 peer-checked:hidden"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -66,7 +69,7 @@
 
         <!-- X -->
         <svg
-          class="h-6 w-6 text-gray-700 hidden peer-checked:block"
+          class="hidden h-7 w-7 peer-checked:block"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -88,13 +91,16 @@
 
       <!-- Menú lateral -->
       <div
-        class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-50"
+        class="fixed top-0 right-0 z-50 h-full w-72 translate-x-full border-l border-slate-200 bg-white shadow-xl transition-transform duration-300 peer-checked:translate-x-0"
       >
         <!-- Botón de cierre -->
         <div class="flex justify-end p-4">
-          <label for="menu-toggle" class="cursor-pointer">
+          <label
+            for="menu-toggle"
+            class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-slate-700 transition duration-300 hover:bg-slate-100/70"
+          >
             <svg
-              class="h-6 w-6 text-gray-700"
+              class="h-7 w-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -109,25 +115,25 @@
           </label>
         </div>
 
-        <ul class="flex flex-col space-y-6 mt-4 ml-6">
+        <ul class="mt-6 flex flex-col gap-6 px-6">
           <li>
             <a
               href="/blog"
-              class="text-gray-700 text-lg font-bold hover:text-[#1D3A75]"
+              class="text-base font-semibold tracking-[0.01em] text-slate-700 transition-colors hover:text-[#1D3A75]"
               >Tratamientos</a
             >
           </li>
           <li>
             <a
               href="/#faqs"
-              class="text-gray-700 text-lg font-bold hover:text-[#1D3A75]"
+              class="text-base font-semibold tracking-[0.01em] text-slate-700 transition-colors hover:text-[#1D3A75]"
               >Preguntas Frecuentes</a
             >
           </li>
           <li>
             <a
               href="/contact"
-              class="px-4 py-2 text-white font-semibold rounded-lg bg-[#0097B2] hover:bg-[#0D3857] transition"
+              class="inline-flex w-fit rounded-full bg-[#0097B2] px-4 py-2 text-sm font-semibold text-white transition duration-300 hover:bg-[#0D3857]"
             >
               Contactar
             </a>

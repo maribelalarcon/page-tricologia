@@ -2,10 +2,12 @@
 import headerImg from "../../assets/img/portada.png";
 ---
 
-<header
-  class="relative h-screen bg-cover bg-center"
-  style={{ backgroundImage: `url(${headerImg.src})` }}
->
+<header class="relative h-screen overflow-hidden">
+  <img
+    src={headerImg.src}
+    alt=""
+    class="absolute inset-0 h-full w-full scale-[1.12] object-cover object-center"
+  />
   <div class="absolute inset-0 bg-black/30"></div>
   <main
     class="relative z-10 flex flex-col items-center justify-end h-full text-center px-4 pb-14 md:pb-20"

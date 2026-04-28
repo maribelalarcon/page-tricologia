@@ -42,10 +42,14 @@ const currentPosts = blogPosts.slice(start, end);
       {currentPosts.map((post) => <BlogCard post={post} />)}
     </div>
 
-    <Pagination
-      currentPage={currentPage}
-      totalPages={totalPages}
-      baseUrl="/blog"
-    />
+    {
+      totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          baseUrl="/blog"
+        />
+      )
+    }
   </section>
 </Base>
